@@ -1,0 +1,211 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f2f7fb; /* Fondo en celeste pastel */
+    color: #333; /* Texto oscuro para mayor legibilidad */
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+    color: #0e0d0c; /* Naranja para los encabezados */
+}
+
+img{background: transparent;}
+
+/* Header */
+header {
+    
+    background: rgb(244,130,0);
+    background: linear-gradient(144deg, rgba(244,130,0,1) 64%, rgba(247,216,9,0.2592228235823385) 77%); 
+border-radius: 0 0 10% 0;
+    padding: 30px 0;
+    text-align: center;
+
+}
+.headerflex{display: flex;
+justify-content: space-evenly;}
+
+
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+
+.headerparrafo{width: 60%;}
+
+
+/* Sección: Qué ofrecemos */
+main h3 {
+    text-align: center;
+    margin: 40px 0;
+    color: #1d1816;
+    font-size: 2rem;
+}
+
+section {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+section div {
+    background-color: #fff;
+    border-radius: 15%;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+section div:hover {
+    transform: translateY(-5px); /* Efecto hover */
+}
+
+section div p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    color: #555;
+}
+
+section div i {
+    font-size: 3rem;
+    color: #f47c3c;
+    margin-bottom: 10px;
+}
+
+section img {
+    width: 50px;
+    height: auto;
+}
+
+/* Accordion */
+.accordion-button {
+    background-color: #f47c3c;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    text-align: left;
+    padding: 15px;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-body {
+    background-color: #f2f7fb;
+    color: #333;
+    font-size: 1rem;
+    
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+}
+
+.accordion-header {
+    margin: 0;
+}
+
+.accordion-button.collapsed {
+    background-color: #f2f7fb;
+    color: #f47c3c;
+}
+
+/* Sección: Siempre disponibles */
+section h2 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.8rem;
+    color: #0f0d0b;
+}
+
+section p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Botón */
+button {
+    background-color: #f47c3c;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: block;
+    margin: 40px auto;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e56429; /* Naranja más oscuro para el hover */
+}
+
+/* Sección de testimonios */
+section h3 {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 2rem;
+    color: #14110f;
+}
+
+section p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Media Queries (Responsividad) */
+@media (max-width: 768px) {
+    section {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    section div {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .accordion-button {
+        font-size: 1rem;
+    }
+
+    .accordion-body {
+        font-size: 0.9rem;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+
+
+
+.titulo {font-size: 3rem;
+    font-weight: bolder;}
+
+h5{font-size: 2rem;}
