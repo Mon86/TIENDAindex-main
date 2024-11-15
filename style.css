@@ -219,11 +219,17 @@ section p {
 
 h5{font-size: 2rem;}
 
-
-.unicos{width: 40%;}
+.unicosconjunto{display: flex;}
+.unicos{width: 40%;
+}
 
 .chatbot{display: flex;
     justify-content: space-evenly;
+    background-color: #ffdb99;
    }
+
+.chatbot p {font-size: 2.5rem;}
+
+.chatbot h2{font-size: 3rem;}
 
 .chatbot img{ width: 40%;}
